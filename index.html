@@ -18,101 +18,54 @@ Join Our Community & Get Started Today
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Online Work Registration</title>
 <style>
-*{
-  margin:0;
-  padding:0;
-  box-sizing:border-box;
-  font-family:'Poppins',sans-serif;
-}
+<section class="hero">
+  <div class="hero-content">
+    <h1>🚀 Online Work</h1>
+    <p>
+      Join our community and stay connected for updates and opportunities.
+    </p>
 
-body{
-  min-height:100vh;
-  display:flex;
-  justify-content:center;
-  align-items:center;
-  background:
-  radial-gradient(circle at top left,#7c3aed,#0f172a 40%),
-  radial-gradient(circle at bottom right,#06b6d4,#111827 40%);
-  padding:20px;
-}
+    <a href="#register" class="btn">
+      Register Now
+    </a>
+  </div>
+</section>
 
-.container{
-  width:100%;
-  max-width:450px;
-  background:rgba(255,255,255,0.08);
-  backdrop-filter:blur(20px);
-  border:1px solid rgba(255,255,255,0.1);
-  border-radius:30px;
-  padding:35px;
-  box-shadow:0 20px 50px rgba(0,0,0,.4);
-}
+<section class="features">
+  <div class="feature-card">
+    <h3>📱 Mobile Friendly</h3>
+    <p>Easy registration from any device.</p>
+  </div>
 
-.logo{
-  text-align:center;
-  font-size:55px;
-  margin-bottom:10px;
-}
+  <div class="feature-card">
+    <h3>⚡ Quick Process</h3>
+    <p>Fast and simple registration experience.</p>
+  </div>
 
-h2{
-  color:#fff;
-  text-align:center;
-  font-size:30px;
-  margin-bottom:8px;
-}
+  <div class="feature-card">
+    <h3>🔒 Privacy First</h3>
+    <p>Your information is handled as described on the page.</p>
+  </div>
+</section>
 
-.subtitle{
-  color:#cbd5e1;
-  text-align:center;
-  margin-bottom:25px;
-}
+<section id="register" class="register-section">
+  <h2>Register Now</h2>
 
-input{
-  width:100%;
-  padding:16px;
-  margin-bottom:15px;
-  border:none;
-  outline:none;
-  border-radius:15px;
-  background:rgba(255,255,255,.08);
-  color:white;
-  font-size:15px;
-}
+  <form id="submissionForm">
+    <input type="text" id="inputName" placeholder="Your Name" required>
 
-input::placeholder{
-  color:#94a3b8;
-}
+    <input type="tel" id="inputPhone" placeholder="Phone Number" required>
 
-.checkbox{
-  display:flex;
-  gap:10px;
-  color:#e2e8f0;
-  font-size:14px;
-  margin:15px 0;
-}
+    <label>
+      <input type="checkbox" required>
+      I agree to share my details for contact purposes.
+    </label>
 
-button{
-  width:100%;
-  padding:16px;
-  border:none;
-  border-radius:15px;
-  background:linear-gradient(135deg,#8b5cf6,#06b6d4);
-  color:white;
-  font-size:17px;
-  font-weight:700;
-  cursor:pointer;
-  transition:.3s;
-}
-
-button:hover{
-  transform:translateY(-3px);
-}
-
-.footer{
-  text-align:center;
-  color:#94a3b8;
-  margin-top:20px;
-  font-size:13px;
-    }
+    <button type="submit">
+      Continue
+    </button>
+  </form>
+</section>
 </style>
 </head>
 <body>
