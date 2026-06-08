@@ -1,116 +1,140 @@
-index.html
-<div class="logo">🚀</div>
-
-<h2>Online Work</h2>
-
-<p class="subtitle">
-Join Our Community & Get Started Today
-</p>
-<h1>Big Heading</h1>
-<h2>Medium Heading</h2>
-<p>Paragraph text</p>
-<img src="photo.jpg" alt="Photo">
-<a href="https://google.com">Link</a>
-<!DOCTYPE html>
+index.html<!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Online Work Registration</title>
-<style>
-<section class="hero">
-  <div class="hero-content">
-    <h1>🚀 Online Work</h1>
-    <p>
-      Join our community and stay connected for updates and opportunities.
-    </p>
-
-    <a href="#register" class="btn">
-      Register Now
-    </a>
-  </div>
-</section>
-
-<section class="features">
-  <div class="feature-card">
-    <h3>📱 Mobile Friendly</h3>
-    <p>Easy registration from any device.</p>
-  </div>
-
-  <div class="feature-card">
-    <h3>⚡ Quick Process</h3>
-    <p>Fast and simple registration experience.</p>
-  </div>
-
-  <div class="feature-card">
-    <h3>🔒 Privacy First</h3>
-    <p>Your information is handled as described on the page.</p>
-  </div>
-</section>
-
-<section id="register" class="register-section">
-  <h2>Register Now</h2>
-
-  <form id="submissionForm">
-    <input type="text" id="inputName" placeholder="Your Name" required>
-
-    <input type="tel" id="inputPhone" placeholder="Phone Number" required>
-
-    <label>
-      <input type="checkbox" required>
-      I agree to share my details for contact purposes.
-    </label>
-
-    <button type="submit">
-      Continue
-    </button>
-  </form>
-</section>
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Work From Home Opportunities</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-<body>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased">
 
-<div class="container">
-    <h2>Online Work Registration</h2>
-    <p>Fill your details below.</p>
+    <header class="bg-gradient-to-r from-blue-600 to-indigo-700 text-white py-16 px-4 text-center shadow-lg">
+        <div class="max-w-4xl mx-auto">
+            <h1 class="text-4xl md:text-5xl font-extrabold tracking-tight mb-4">
+                Ghar Baithe Kamayein
+            </h1>
+            <p class="text-lg md:text-xl text-blue-100 max-w-2xl mx-auto">
+                Hum aapko aapki marzi aur skills ke mutabik genuine Work From Home projects provide karte hain. Aaj hi register karein!
+            </p>
+        </div>
+    </header>
 
-    <form id="submissionForm">
-        <label>Name</label>
-        <input type="text" id="inputName" required>
+    <main class="max-w-4xl mx-auto px-4 py-12">
+        <div class="grid md:grid-cols-2 gap-8 items-center bg-white p-8 rounded-2xl shadow-xl border border-slate-100">
+            
+            <div class="space-y-6">
+                <h2 class="text-2xl font-bold text-slate-900">Hum Kaise Kam Karte Hain?</h2>
+                
+                <div class="flex items-start space-x-4">
+                    <div class="bg-blue-100 text-blue-600 p-3 rounded-xl mt-1">
+                        <i class="fas fa-file-alt text-xl w-6 text-center"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-semibold text-lg text-slate-800">1. Details Fill Karein</h3>
+                        <p class="text-slate-600 text-sm">Apna basic data aur interest humare sath share karein.</p>
+                    </div>
+                </div>
 
-        <label>Phone Number</label>
-        <input type="tel" id="inputPhone" required>
+                <div class="flex items-start space-x-4">
+                    <div class="bg-green-100 text-green-600 p-3 rounded-xl mt-1">
+                        <i class="fab fa-whatsapp text-xl w-6 text-center"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-semibold text-lg text-slate-800">2. WhatsApp Verification</h3>
+                        <p class="text-slate-600 text-sm">Aapki permission se details directly humare WhatsApp par aayengi.</p>
+                    </div>
+                </div>
 
-        <label>
-            <input type="checkbox" required>
-            I agree to share my details.
-        </label>
+                <div class="flex items-start space-x-4">
+                    <div class="bg-indigo-100 text-indigo-600 p-3 rounded-xl mt-1">
+                        <i class="fas fa-briefcase text-xl w-6 text-center"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-semibold text-lg text-slate-800">3. Kaam Shuru Karein</h3>
+                        <p class="text-slate-600 text-sm">Hum aapko contact karke sahi project assign karenge.</p>
+                    </div>
+                </div>
+            </div>
 
-        <button type="submit">Register Now</button>
-    </form>
-</div>
+            <div class="bg-slate-50 p-6 rounded-xl border border-slate-200">
+                <h3 class="text-xl font-bold text-slate-900 mb-4 text-center">Registration Form</h3>
+                
+                <form id="wfhForm" onsubmit="sendToWhatsapp(event)" class="space-y-4">
+                    <div>
+                        <label class="block text-sm font-medium text-slate-700 mb-1">Aapka Naam (Full Name)</label>
+                        <input type="text" id="userName" required class="w-full px-4 py-2.5 rounded-lg border border-slate-300 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none bg-white transition" placeholder="John Doe">
+                    </div>
 
-<script>
-document.getElementById("submissionForm").addEventListener("submit", function(e) {
-    e.preventDefault();
+                    <div>
+                        <label class="block text-sm font-medium text-slate-700 mb-1">WhatsApp Number</label>
+                        <input type="tel" id="userPhone" required class="w-full px-4 py-2.5 rounded-lg border border-slate-300 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none bg-white transition" placeholder="98765XXXXX">
+                    </div>
 
-    const name = document.getElementById("inputName").value;
-    const phone = document.getElementById("inputPhone").value;
+                    <div>
+                        <label class="block text-sm font-medium text-slate-700 mb-1">Kaam ka Type</label>
+                        <select id="workType" class="w-full px-4 py-2.5 rounded-lg border border-slate-300 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none bg-white transition">
+                            <option value="Data Entry">Data Entry</option>
+                            <option value="Typing Work">Typing Work</option>
+                            <option value="Calling / Support">Customer Support / Calling</option>
+                            <option value="Digital Marketing">Digital Marketing</option>
+                        </select>
+                    </div>
 
-    const message =
-`Online Work Registration
+                    <div class="flex items-start mt-2">
+                        <div class="flex items-center h-5">
+                            <input id="consent" type="checkbox" required class="w-4 h-4 text-blue-600 border-slate-300 rounded focus:ring-blue-500">
+                        </div>
+                        <div class="ml-3 text-xs">
+                            <label for="consent" class="text-slate-600 font-medium">Main apni marzi se apni details share karne ki permission deta/dedi hu.</label>
+                        </div>
+                    </div>
 
-Name: ${name}
-Phone: ${phone}`;
+                    <button type="submit" class="w-full bg-emerald-600 hover:bg-emerald-700 text-white font-semibold py-3 px-4 rounded-lg shadow transition flex items-center justify-center space-x-2 cursor-pointer">
+                        <i class="fab fa-whatsapp text-lg"></i>
+                        <span>Submit via WhatsApp</span>
+                    </button>
+                </form>
+            </div>
 
-    const whatsappUrl =
-`https://wa.me/918058822912?text=${encodeURIComponent(message)}`;
+        </div>
+    </main>
 
-    window.open(whatsappUrl, "_blank");
-});
-</script>
+    <footer class="text-center py-6 text-slate-400 text-xs border-t border-slate-200 mt-12">
+        &copy; 2026 Work From Home Portal. All data collected with user consent.
+    </footer>
 
+    <script>
+        function sendToWhatsapp(event) {
+            event.preventDefault();
+
+            // Form Values
+            const name = document.getElementById('userName').value;
+            const phone = document.getElementById('userPhone').value;
+            const work = document.getElementById('workType').value;
+            const consentChecked = document.getElementById('consent').checked;
+
+            if(!consentChecked) {
+                alert("Kripya permission checkbox ko tick karein.");
+                return;
+            }
+
+            // Aapka WhatsApp Number (Country code '91' ke sath)
+            const myPhoneNumber = "917850953373";
+
+            // WhatsApp Message Formatting
+            const message = `*New WFH Registration*%0A%0A` +
+                            `*Naam:* ${encodeURIComponent(name)}%0A` +
+                            `*WhatsApp:* ${encodeURIComponent(phone)}%0A` +
+                            `*Work Interest:* ${encodeURIComponent(work)}%0A` +
+                            `*User Consent:* Haan, permission di hai.`;
+
+            // WhatsApp API URL
+            const whatsappUrl = `https://api.whatsapp.com/send?phone=${myPhoneNumber}&text=${message}`;
+
+            // Redirect to WhatsApp
+            window.open(whatsappUrl, '_blank');
+        }
+    </script>
 </body>
-  </html>index.html
-
-
+                          </html>
